@@ -1,0 +1,15 @@
+<div data-role="view" data-title="Dixit Today" data-layout="layout-detail" id="eventView" data-model="app.eventView" data-init="app.eventView.onInit" data-show="app.eventView.onShow" data-use-native-scrolling="true">
+    <div class="detailEventWrapper">
+        <div class="eventInfos">
+            <h2 data-bind="text: translations.texts.infos"></h2>
+            <div class="date"><span data-bind="visible: event.isSameDay, text: translations.texts.the"></span><span data-bind="invisible: event.isSameDay, text: translations.texts.from"></span> <span data-bind="date: event.startDate" data-dateformat="D.MM.YYYY"></span> <span data-bind="invisible: event.isSameDay, text: translations.texts.to"></span> <span data-bind="invisible: event.isSameDay, date: event.endDate" data-dateformat="D.MM.YYYY"></span></div>
+            <div class="clearAll"></div>
+            <span class="hour" data-bind="visible: event.startTime, text: event.startTime"></span>
+            <div class="clearAll"></div>
+            <span class="place" data-bind="visible: event.location, text: event.location"></span>
+            <a class="addToCal" data-role="button"><span data-bind="attr: {data-calendar: event.url, data-calendar-title: event.title, data-calendar-analytic-title: event.analyticTitle, data-calendar-location: event.location, data-calendar-startdate: event.startDate, data-calendar-enddate: event.endDate}, text: translations.texts.add_calendar"></span></a>
+        </div>
+        <h1 data-bind="text: event.title"></h1>
+        <div class="content externalLinks" data-bind="html: event.content"></div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div data-role="view" data-title="Dixit Today" data-layout="layout" id="eventsView" data-model="app.eventsView" data-init="app.eventsView.onInit" data-show="app.eventsView.onShow" data-stretch="true">
+    <div class="agendaWrapper">
+        <div class="swiper-container swiper-months">
+            <div class="swiper-wrapper" data-role="repeater" data-bind="source: months" data-template="eventsViewMonthsTemplate"></div>
+        </div>
+        <div class="swiper-container swiper-years">
+            <div class="swiper-wrapper" data-role="repeater" data-bind="source: years" data-template="eventsViewYearsTemplate"></div>
+        </div>
+
+        <div data-role="scroller" data-use-native="true" data-elastic="false" style="height: 100%">
+            <div class="listEvents" data-role="repeater" data-bind="source: events, events: { dataBound: onEventsLoaded }" data-template="eventsViewEventsTemplate"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/x-kendo-template" id="eventsViewMonthsTemplate">
+    <div class="swiper-slide" data-month="#: month #" style="width: auto" data-analytic-title="#: month #">#: name #</div>
+</script>
+
+<script type="text/x-kendo-template" id="eventsViewYearsTemplate">
+    <div class="swiper-slide" data-year="#: data #" style="width: auto" data-analytic-title="#: data #">#: data #</div>
+</script>
+
+<script type="text/x-kendo-template" id="eventsViewEventsTemplate">
+    <div class="eventItem" data-id="#: id #" data-role="button">
+        <div class="eventHeader" style="visibility: hidden; background: url('#: image #')">
+            <div class="eventDate">
+                <div class="from">#: startDay #<span>#: startDayMonth #</span>#: startYear #</div>
+                # if ((startDayMonth != endDayMonth) || (startYear != endYear)) { #
+                    <div class="to">#: endDay #<span>#: endDayMonth #</span>#: endYear #</div>
+                # } #
+            </div>
+        </div>
+        <div class="eventContent">
+            # if (location) { #<div class="location">#: location #</div> # } #
+            <div class="addToCal" data-role="button" data-calendar="#: url #" data-calendar-title="#: title #" data-calendar-analytic-title="#: analyticTitle #" data-calendar-location="#: location #" data-calendar-startdate="#: startDate #" data-calendar-enddate="#: endDate #"></div>
+            <div class="clearAll"></div>
+            <h2>#: title #</h2>
+            <p>#= summary #</p>
+        </div>
+    </div>
+</script>

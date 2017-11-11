@@ -1,0 +1,10 @@
+declare var isNativeScript: boolean;
+declare var platform: any;
+declare var isCordova: boolean;
+declare var isWindowsPhone: boolean;
+declare var isAndroid: boolean;
+declare var isNodejs: boolean;
+declare var isRequirejs: any;
+declare var isDesktop: boolean;
+declare var isInAppBuilderSimulator: () => any;
+export { isCordova, isNativeScript, isDesktop, isWindowsPhone, isAndroid, isNodejs, isRequirejs, platform, isInAppBuilderSimulator };

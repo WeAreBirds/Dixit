@@ -1,0 +1,15 @@
+<div data-role="view" data-title="Dixit Today" data-layout="layout-private-mode" id="privatePasswordView" data-model="app.privatePasswordView" data-init="app.privatePasswordView.onInit" data-show="app.privatePasswordView.onShow" data-stretch="true">
+    <div class="privateScreen">
+        <h1><span data-bind="text: translations.texts.titlePassword">Veuillez entrer votre mot de passe</span><br/><span class="small" data-bind="text: translations.texts.subtitlePassword">(reçu par email)</span></h1>
+        <form id="validateUserForm">
+            <span data-bind="text: translations.texts.invalidPassword" class="labelerror" id="labelPasswordError" style="display: none">
+                mot de passe non valide
+            </span>
+            <div class="formInput">
+                <input type="text" pattern="[0-9]*" id="password"/>
+            </div>
+            <button type="submit" class="passwordButton" data-bind="text: translations.texts.validate">Valider</button>
+        </form>
+        <a href="components/privateLogin/view.html" data-role="button" class="notsendpassword" data-position="fixed"><span data-bind="text: translations.texts.notSend">Vous n'avez pas reçu votre mot de passe ?</span></a>
+    </div>
+</div>

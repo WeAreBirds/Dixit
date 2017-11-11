@@ -1,0 +1,32 @@
+<div data-role="view" data-title="Dixit Today" data-layout="layout-private-mode" id="privateLoginView" data-model="app.privateLoginView"
+    data-init="app.privateLoginView.onInit" data-show="app.privateLoginView.onShow" data-stretch="true">
+    <div class="privateScreen">
+        <h1 data-bind="text: translations.texts.titleLogin">Veuillez entrer<br/>votre adresse e-mail<br/>professionnelle</h1>
+        <form id="createUserForm">
+            <span data-bind="text: translations.texts.invalidEntry" class="labelerror" id="labelError" style="display: none;">
+                entrée non valide
+            </span>
+            <div id="formInput" class="formInput">
+                <input type="text" id="email" />
+            </div>
+            <div class="formSelect" id="mailDropDown">
+                <ul id="mails" style="width: 100%;">
+                        <li><input type="radio" id="bnpparibasfortis" name="domainName" value="@bnpparibasfortis.com" checked><label for="bnpparibasfortis" class="active">@bnpparibasfortis.com</label></li>
+                        <li><input type="radio" id="acred" name="domainName" value="@acred.be"><label for="acred">@acred.be</label></li>
+                        <li><input type="radio" id="alphacredit" name="domainName" value="@alphacredit.be"><label for="alphacredit">@alphacredit.be</label></li>
+                        <li><input type="radio" id="alpha-card" name="domainName" value="@alpha-card.com"><label for="alpha-card">@alpha-card.com</label></li>
+                        <li><input type="radio" id="arval" name="domainName" value="@arval.be"><label for="arval">@arval.be</label></li>
+                        <li><input type="radio" id="bnpparibas" name="domainName" value="@bnpparibas.com"><label for="bnpparibas">@bnpparibas.com</label></li>
+                        <li><input type="radio" id="bnpparibasfortisfactor" name="domainName" value="@bnpparibasfortisfactor.com"><label for="bnpparibasfortisfactor">@bnpparibasfortisfactor.com</label></li>
+                        <li><input type="radio" id="bpostbank" name="domainName" value="@bpostbank.be"><label for="bpostbank">@bpostbank.be</label></li>
+                        <li><input type="radio" id="cardif" name="domainName" value="@cardif.be"><label for="cardif">@cardif.be</label></li>
+                        <li><input type="radio" id="demetris" name="domainName" value="@demetris.be"><label for="demetris">@demetris.be</label></li>
+                        <li><input type="radio" id="fintro" name="domainName" value="@fintro.be"><label for="fintro">@fintro.be</label></li>
+                        <li><input type="radio" id="hellobank" name="domainName" value="@hellobank.com"><label for="hellobank">@hellobank.com</label></li>
+                </ul>
+            </div>
+            <button type="submit" data-bind="text: translations.texts.validate">Valider</button>
+        </form>
+        <a href="components/articles/view.html" data-role="button" class="cancelButton"><span data-bind="text: translations.texts.cancel">Annuler</span></a>
+    </div>
+</div>

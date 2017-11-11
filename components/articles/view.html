@@ -1,0 +1,69 @@
+<div class="screen" data-role="view" data-title="Dixit Today" data-layout="layout-search" id="articlesView" data-model="app.articlesView"
+    data-init="app.articlesView.onInit" data-show="app.articlesView.onShow" data-stretch="true">
+    <div id="articlesListOs">
+        <div class="gradientSwiper"></div>
+        <div class="swiper-container swiper-categories">
+            <div class="swiper-wrapper" data-role="repeater" data-bind="source: categories, events: { dataBound: onCategoriesLoaded }"
+                data-template="articlesViewCategoriesTemplate"></div>
+        </div>
+
+        <div class="swiper-container swiper-articles">
+            <div class="swiper-wrapper" data-role="repeater" data-bind="source: categories, events: { dataBound: onArticlesLoaded }"
+                data-template="articlesViewArticlesTemplate"></div>
+        </div>
+        
+        <!--<div class="swiper-container swiper-videos">
+            <h2>Les vidéos récentes</h2>
+            <div class="swiper-wrapper" data-role="repeater" data-bind="source: videoArticles, events: { dataBound: onArticlesLoaded }" 
+                data-template="videoSwiperTemplate"></div>
+            <div class="swiper-pagination"></div>
+        </div>-->
+    </div>
+    
+</div>
+
+<script type="text/x-kendo-template" id="articlesViewCategoriesTemplate">
+    <div class="swiper-slide #: CssName #" data-id="#: Id #" style="width: auto" data-analytic-title="#: AnalyticTitle #">#: Title #</div>
+</script>
+
+<script type="text/x-kendo-template" id="articlesViewArticlesTemplate">
+    <div class="swiper-slide" data-id="#: Id #">
+        <div data-role="scroller" data-use-native="true" data-elastic="false" style="height: 100%">
+            <div class="list topStories"></div>
+            <div class="list recentArticles">
+                <a class="buttonSeeMore" data-page="0" data-bind="click: loadMore, text: translations.texts.more_articles" style="display: none;"></a>
+            </div>
+        </div>
+        <div class="tooltipDate" style="display: none"></div>
+    </div>
+</script>
+
+<script type="text/x-kendo-template" id="articlesViewArticleTemplate">
+    <div class="card #: categoryCssClass # photo" style="visibility: hidden; background-image: url('#: image #');" data-id="#: id #"
+        data-date="#: date #" data-type="#: articleType #">
+        <span class="photo" style="display:none;" id="pictureClick-#: id #">Photo</span>
+        <div class="content">
+            <h3>#: categoryTitle #</h3>
+            <h2>#: title #</h2>
+        </div>
+    </div>
+    <div class="pictureInfos" style="display:none" id="pictureDetail-#: id #">
+        <a data-role="button" class="closeButton" id="closePictureDetail-#: id #"></a>
+        <div class="zoomTarget">
+            <img src="#: image #" />
+        </div>
+        <a class="closeZoom">Fermer</a>
+        <h2>#: title #</h2>
+        <p>#= summary #</p>
+    </div>
+</script>
+<script type="text/x-kendo-template" id="videoSwiperTemplate">
+    <div class="swiper-slide" style="background-image: url('#: image #');" data-url-vimeo="#: vimeoVideoID#" data-url-youtube="#: youtubeVideoID#">
+        <span class="play"></span>
+        <div class="content">
+            <h3>Vidéo</h3>
+            <h2>#: title #</h2>
+        </div>
+        <div class="iframe"></div>
+    </div>
+</script>

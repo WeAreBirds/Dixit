@@ -1,0 +1,21 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "declaration": "<%= generateDeclarations %>",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "target": "es5",
+    "inlineSources": true
+  },
+
+  "files": [
+    "<%= entryFile %>",
+    "typings/index.d.ts"
+  ],
+
+  "awesomeTypescriptLoaderOptions": {
+    "skipDeclarationFilesCheck": true
+  }
+}

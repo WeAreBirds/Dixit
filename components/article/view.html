@@ -1,0 +1,180 @@
+<div data-role="view" data-title="Dixit Today" data-layout="layout-search-detail" id="articleView" data-model="app.articleView"
+    data-init="app.articleView.onInit" data-show="app.articleView.onShow" data-use-native-scrolling="true">
+    <div class="detailArticleWrapper">
+        <h3 data-bind="categoryclass: article.categoryCssClass, text: article.categoryTitle"></h3>
+        <div class="clearAll"></div>
+        <h1 data-bind="text: article.title"></h1>
+        <div class="metas">
+            <span class="author" data-bind="text: article.author"></span>
+            <span class="date" data-bind="date: article.date" data-dateformat="D.MM.YYYY"></span>
+        </div>
+        <div class="content">
+            <h2 data-bind="html: article.header"></h2>
+            <img data-bind="attr: { src: article.image }" />
+            <blockquote data-bind="visible: article.quote, html: article.quote"></blockquote>
+            <div class="externalLinks" data-bind="html: article.content"></div>
+        </div>
+        <div data-bind="visible: article.hasGallery" class="swiper-container gallery">
+            <div class="swiper-wrapper" data-role="repeater" data-bind="source: article.gallery, events: { dataBound: onGalleryLoaded }"
+                data-template="articleViewGalleryTemplate"></div>
+                <div class="swiper-pagination"></div>
+        </div>
+        <div class="moreInfo" data-bind="visible: showMoreInfo">
+            <h3 data-bind="text: translations.texts.moreInfo">En savoir plus ?</h3>
+            <p data-bind="html: article.externalContent"></p>
+            <p data-bind="html: article.internalContent"></p>
+        </div>
+        <div class="contact">
+            <a id="contactButton" data-rel="external" target="_blank" data-role="touch" class="button">Contact</a>
+        </div>
+        <div class="tags" data-bind="visible: article.hasTags">
+            <h3>Tags</h3>
+            <div data-role="repeater" data-bind="source: article.tags" data-template="articleViewTagsTemplate"></div>
+        </div>
+        <div class="poll Answer" data-bind="visible: article.showSurveyAnswers">
+            <h3 data-bind="text: article.survey.Question"></h3>
+            <div class="question" data-bind="visible: article.survey.Answer1">
+                <input type="checkbox" id="answer1" data-bind="click: answer, attr: { data-article-id: article.id, data-id: article.survey.Id }"
+                    value="Answer1" />
+                <label for="answer1" data-bind="text: article.survey.Answer1"></label>
+            </div>
+            <div class="question" data-bind="visible: article.survey.Answer2">
+                <input type="checkbox" id="answer2" data-bind="click: answer, attr: { data-article-id: article.id, data-id: article.survey.Id }"
+                    value="Answer2" />
+                <label for="answer2" data-bind="text: article.survey.Answer2"></label>
+            </div>
+            <div class="question" data-bind="visible: article.survey.Answer3">
+                <input type="checkbox" id="answer3" data-bind="click: answer, attr: { data-article-id: article.id, data-id: article.survey.Id }"
+                    value="Answer3" />
+                <label for="answer3" data-bind="text: article.survey.Answer3"></label>
+            </div>
+            <div class="question" data-bind="visible: article.survey.Answer4">
+                <input type="checkbox" id="answer4" data-bind="click: answer, attr: { data-article-id: article.id, data-id: article.survey.Id }"
+                    value="Answer4" />
+                <label for="answer4" data-bind="text: article.survey.Answer4"></label>
+            </div>
+            <div class="question" data-bind="visible: article.survey.Answer5">
+                <input type="checkbox" id="answer5" data-bind="click: answer, attr: { data-article-id: article.id, data-id: article.survey.Id }"
+                    value="Answer5" />
+                <label for="answer5" data-bind="text: article.survey.Answer5"></label>
+            </div>
+        </div>
+        <div class="poll" data-bind="visible: article.showSurvey">
+            <h3 data-bind="text: article.survey.Question"></h3>
+            <div class="answer" data-bind="visible: article.survey.Answer1">
+                <span class="text" data-bind="text: article.survey.Answer1"></span>
+                <span class="number" data-bind="text: article.survey.FormattedCount1"></span>
+                <div class="progressbar"><span data-bind="percentbar: article.survey.PercentageAnswer1"></span></div>
+            </div>
+            <div class="answer" data-bind="visible: article.survey.Answer2">
+                <span class="text" data-bind="text: article.survey.Answer2"></span>
+                <span class="number" data-bind="text: article.survey.FormattedCount2"></span>
+                <div class="progressbar"><span data-bind="percentbar: article.survey.PercentageAnswer2"></span></div>
+            </div>
+            <div class="answer" data-bind="visible: article.survey.Answer3">
+                <span class="text" data-bind="text: article.survey.Answer3"></span>
+                <span class="number" data-bind="text: article.survey.FormattedCount3"></span>
+                <div class="progressbar"><span data-bind="percentbar: article.survey.PercentageAnswer3"></span></div>
+            </div>
+            <div class="answer" data-bind="visible: article.survey.Answer4">
+                <span class="text" data-bind="text: article.survey.Answer4"></span>
+                <span class="number" data-bind="text: article.survey.FormattedCount4"></span>
+                <div class="progressbar"><span data-bind="percentbar: article.survey.PercentageAnswer4"></span></div>
+            </div>
+            <div class="answer" data-bind="visible: article.survey.Answer5">
+                <span class="text" data-bind="text: article.survey.Answer5"></span>
+                <span class="number" data-bind="text: article.survey.FormattedCount5"></span>
+                <div class="progressbar"><span data-bind="percentbar: article.survey.PercentageAnswer5"></span></div>
+            </div>
+        </div>
+        <div class="comments" data-bind="visible: article.allowComments">
+            <h3>Commentaire(s)</h3>
+
+            <div class="listComments" data-role="repeater" data-bind="source: comments" data-template="commentViewTemplate"></div>
+            <h3>Laissez un commentaire</h3>
+            <div class="confirmPopup" id="sendCommentConfirm" style="display:none"><p>Votre commentaire est<br/>en cours de validation</p></div>
+            <form class="formComments">
+                <div class="formItem">
+                    <label>Votre nom<span>*</span></label>
+                    <input type="text" id="commentName" required>
+                </div>
+                <div class="formItem">
+                    <label>Votre email<span>*</span></label>
+                    <input type="email" id="commentEmail" required>
+                </div>
+                <div class="formItem">
+                    <label>Votre message<span>*</span></label>
+                    <textarea required id="commentMessage"></textarea>
+                </div>
+                <button type="submit" id="sendComment">Envoyer</button>
+            </form>
+            
+        </div>
+        <div class="similarArticles" data-bind="visible: hasRelatedArticles">
+            <h3 data-bind="text: translations.texts.related"></h3>
+            <div data-role="repeater" data-bind="source: relatedArticles" data-template="articleViewRelatedArticlesTemplate"></div>
+        </div>
+    </div>
+    <footer data-role="footer" class="social">
+        <a class="likeButton" data-bind="click: like, css: { active: article.isLiked }, attr: { data-id: article.id, data-analytic-title: article.analyticTitle }"><span data-bind="text: article.likes"></span></a>
+        <div class="socialButtons" data-bind="invisible: article.isPrivate">
+            <a data-role="button"><span data-bind="text: translations.texts.share, attr: { data-share: article.url, data-analytic-title: article.analyticTitle }">Partager</span></a>
+        </div>
+    </footer>
+</div>
+
+<script type="text/x-kendo-template" id="articleViewTagsTemplate">
+    <a data-role="button" href="components/search/view.html?mode=tag&search=#: Id #&tag=#: Title #">#: Title #</a>
+</script>
+
+<script type="text/x-kendo-template" id="articleViewRelatedArticlesTemplate">
+    <div class="card #: categoryCssClass #" style="background-image: url('#: image #');" data-id="#: id #" data-role="button">
+        <div class="content">
+            <h3>#: categoryTitle #</h3>
+            <h2>#: title #</h2>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-kendo-template" id="articleViewGalleryTemplate">
+    <div class="swiper-slide">
+        <img src="#: data #" />
+    </div>
+</script>
+
+<script type="text/x-kendo-template" id="commentViewTemplate">
+    <div class="comment" id="#: id #">
+        <span class="user">#: authorName #</span><span class="date"> / #: createdDate #</span>
+        <p class="content">#: message #</p>
+        <a id="replyComment" class="answerLink">Répondre</a>
+    </div>
+    <div class="replyForm" style="display:none" id="reply-#: id #">
+        <h3>Répondre à ce commentaire</h3>
+        <form class="formComments" >
+            <div class="formItem">
+                <label>Votre nom<span>*</span></label>
+                <input type="text" id="commentName-#: id #" required >
+            </div>
+            <div class="formItem">
+                <label>Votre email<span>*</span></label>
+                <input type="email" id="commentMail-#: id #" required>
+            </div>
+            <div class="formItem">
+                <label>Votre message<span>*</span></label>
+                <textarea required id="commentMessage-#: id #"></textarea>
+            </div>
+            <button type="submit" id="sendComment-#: id #">Envoyer</button>
+        </form>
+    </div>
+    <div class="confirmPopup" id="sendCommentConfirm-#: id #" style="display:none"><p data-bind="text: translations.texts.confirmComment">Votre commentaire est<br/>en cours de validation</p></div>
+    <div class="errorPopup" style="display:none"><p data-bind="text: translations.texts.errorComment">Veuillez remplir tous les champs</p></div>
+    # for(var i=0; i < replies.length; i++){ # 
+        #= kendo.render(kendo.template($("\\#subCommentViewTemplate").html()), [replies[i]]) #
+    # } #
+</script>
+<script type="text/x-kendo-template" id="subCommentViewTemplate">
+    <div class="subComment">
+        <span class="user">#: authorName #</span><span class="date"> / #: createdDate #</span>
+        <p class="content">#: message #</p>
+    </div>
+</script>

@@ -1,0 +1,32 @@
+<div class="screen" data-role="view" data-title="Dixit Today" id="searchView" data-model="app.searchView" data-init="app.searchView.onInit" data-show="app.searchView.onShow" data-stretch="true">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="backbutton" data-align="left" data-icon="details-button"></a>
+            <span data-role="view-title"></span>
+            <a data-role="button" data-align="right" data-icon="search" class="searchButton"></a>
+        </div>
+        <form data-role="searchbar" data-blur="no" class="searchBar" style="display: block;">
+            <input type="text" name="search" data-bind="attr: { placeholder: translations.texts.search }" />
+            <input type="submit" value="" />
+            <span class="km-icon km-search km-notext"></span>
+        </form>
+    </header>
+
+    <div id="searchListOs"> 
+        <div data-role="scroller" data-use-native="true" data-elastic="false" style="height: 100%">
+            <div class="list recentArticles">
+                <a class="buttonSeeMore" data-page="0" data-bind="click: loadMore, text: translations.texts.more_articles" style="display: none;"></a>
+            </div>
+            <div class="noResults" data-bind="text: translations.texts.noResults" id="noResults" style="display: none">Pas de résultats</div>
+        </div>
+    </div>
+</div>
+
+<script type="text/x-kendo-template" id="searchViewArticlesTemplate">
+    <div class="card #: categoryCssClass #" style="visibility: hidden; background-image: url('#: image #');" data-id="#: id #" data-date="#: date #" data-role="button">
+        <div class="content">
+            <h3>#: categoryTitle #</h3>
+            <h2>#: title #</h2>
+        </div>
+    </div>
+</script>

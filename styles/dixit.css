@@ -1,0 +1,2047 @@
+::-webkit-scrollbar {display:none;}
+
+/*** FONTS FAMILY ***/
+
+@font-face {
+  font-family: "bnp-icon";
+  src: url("../fonts/bnp-icon.ttf?enyljt") format("truetype");
+  src: url("../fonts/bnp-icon.woff?enyljt") format("woff");
+  src: url("../fonts/bnp-icon.svg?enyljt#bnp-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "BNPPSansReg";
+    src: url('../fonts/BNPPSansRegular-webfont.eot');
+    src: url('../fonts/BNPPSansRegular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BNPPSansRegular-webfont.woff') format('woff'), url('../fonts/BNPPSansRegular-webfont.ttf') format('truetype'), url('../fonts/BNPPSansRegular-webfont.svg#BNPPSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BNPPSansLight";
+    src: url('../fonts/BNPPSansLight-webfont.eot');
+    src: url('../fonts/BNPPSansLight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BNPPSansLight-webfont.woff') format('woff'), url('../fonts/BNPPSansLight-webfont.ttf') format('truetype'), url('../fonts/BNPPSansLight-webfont.svg#BNPPSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BNPPSansBold";
+    src: url('../fonts/BNPPSansBold-webfont.eot');
+    src: url('../fonts/BNPPSansBold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BNPPSansBold-webfont.woff') format('woff'), url('../fonts/BNPPSansBold-webfont.ttf') format('truetype'), url('../fonts/BNPPSansBold-webfont.svg#BNPPSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BNPPSansItalic";
+    src: url('../fonts/BNPPSansItalic-webfont.eot');
+    src: url('../fonts/BNPPSansItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BNPPSansItalic-webfont.woff') format('woff'), url('../fonts/BNPPSansItalic-webfont.ttf') format('truetype'), url('../fonts/BNPPSansItalic-webfont.svg#BNPPSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BNPPSansCond";
+    src: url('../fonts/BNPPSansCond-webfont.eot');
+    src: url('../fonts/BNPPSansCond-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BNPPSansCond-webfont.woff') format('woff'), url('../fonts/BNPPSansCond-webfont.ttf') format('truetype'), url('../fonts/BNPPSansCond-webfont.svg#BNPPSansCond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BNPPSansCondBold";
+    src: url('../fonts/BNPPSansCondBold-webfont.eot');
+    src: url('../fonts/BNPPSansCondBold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BNPPSansCondBold-webfont.woff') format('woff'), url('../fonts/BNPPSansCondBold-webfont.ttf') format('truetype'), url('../fonts/BNPPSansCondBold-webfont.svg#BNPPSansCondBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BNPPRounded";
+    src: url('../fonts/bnpp-rounded-v2.eot');
+    src: url('../fonts/bnpp-rounded-v2.eot?#iefix') format('embedded-opentype'), url('../fonts/bnpp-rounded-v2.woff') format('woff'), url('../fonts/bnpp-rounded-v2.ttf') format('truetype'), url('../fonts/bnpp-rounded-v2.svg#bnpp-rounded-v2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BNPPRoundedLight";
+    src: url('../fonts/bnpp-rounded-light-v2.eot');
+    src: url('../fonts/bnpp-rounded-light-v2.eot?#iefix') format('embedded-opentype'), url('../fonts/bnpp-rounded-light-v2.woff') format('woff'), url('../fonts/bnpp-rounded-light-v2.ttf') format('truetype'), url('../fonts/bnpp-rounded-light-v2.svg#bnpp-rounded-v2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*** GENERAL ***/
+
+.clearAll {
+    clear: both;
+}
+
+.km-nova .km-drawer .km-scroll-container {
+    justify-content: flex-start;
+}
+
+.km-nova .km-content {
+    background: #262320;
+}
+
+#kendoUiMobileApp .km-header .km-navbar {
+    background: #00965e;
+    font-family: "BNPPSansReg";
+    font-size: 18px;
+}
+
+.km-header {
+    height: 55px;
+}
+
+.km-header .km-rightitem {
+    position: absolute !important;
+    right: 10px;
+}
+
+.km-header .km-view-title {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.hidden{
+     opacity:0;
+}
+
+.visible{
+     opacity:1;
+}
+
+.swiper-articles {
+    height: 100%;
+}
+
+.iOSlikeOS #articlesListOs {
+    height: calc(100% - 85px) !important;
+}
+
+.ANDROIDlikeOS #articlesListOs {
+    height: calc(100% - 90px) !important;
+}
+
+.iOSlikeOS #searchListOs {
+    height: calc(100% - 60px) !important;
+}
+
+.ANDROIDlikeOS #searchListOs {
+    height: calc(100% - 60px) !important;
+}
+
+/*** HEADER ***/
+
+.searchBar {
+    position: absolute;
+    z-index: 50;
+    top: 7px;
+    right: 10px;
+    display: none;
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+
+.searchBar input[type="text"] {
+    width: calc(100vw - 120px);
+    height: 42px;
+    background: none;
+    border: none;
+    float: left;
+    font-size: 18px;
+    padding-left: 10px;
+    font-family: "BNPPSansLight";
+    color: #666666;
+}
+
+.searchBar input[type="submit"] {
+    width: 45px;
+    height: 35px;
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.searchBar .km-icon {
+    color: #00965e;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 3px;
+}
+
+.searchBar .km-icon::after {
+    margin: 8px 0 0 0 !important;
+    font-size: 18px !important;
+}
+
+.gradientSwiper::before {
+    content:"";
+    background: linear-gradient(to right, rgba(0,150,95,1) 0%, rgba(0,150,95,0) 100%);
+    width: 30vw;
+    height: 30px;
+    position: absolute;
+    z-index: 50;
+    top: -5px;
+    left: 0;
+    pointer-events: none;
+}
+
+.gradientSwiper::after {
+    content:"";
+    background: linear-gradient(to left, rgba(0,150,95,1) 0%, rgba(0,150,95,0) 100%);
+    width: 30vw;
+    height: 30px;
+    position: absolute;
+    z-index: 50;
+    top: -5px;
+    right: 0;
+    pointer-events: none;
+}
+
+.noResults {
+    font-family: "BNPPSansCondBold";
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../img/no-results.png") no-repeat center bottom;
+    padding-bottom: 90px;
+}
+
+/*** MENU ***/
+
+.km-drawer .km-header, .km-drawer .km-footer {
+    background-color: #2E2E2E !important;
+}
+
+.km-drawer li {
+    padding: 10px 20px !important;
+    border: none !important;
+    width: 90% !important;
+    margin: auto !important;
+}
+.km-drawer li a {
+    font-family: "BNPPRounded";
+    font-size: 16px;
+    border-bottom: solid 1px #828282;
+    cursor: pointer;
+}
+.km-drawer li:last-child a {
+    border-bottom: none;
+}
+.km-drawer li a::after {
+    display: none;
+}
+.km-drawer li.km-state-active {
+    background: none !important;
+    border: none !important;
+}
+.km-drawer li.km-state-active::before {
+    background: none !important;
+}
+.km-drawer h3 {
+    color: #828282;
+    font-family: "BNPPRoundedLight";
+    margin: 10px 20px 0 15px;
+    float: left;
+}
+.km-listview-wrapper {
+    float: left;
+}
+.km-drawer .menuLanguage {
+    margin: 10px 20px 0 20px;
+}
+.km-drawer li.lang-section {
+    width: 50% !important;
+    float: left;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 40px !important;
+}
+.km-drawer li.lang-section a {
+    border-bottom: solid 3px #FFFFFF;
+    text-align: center;
+    font-family: "BNPPRoundedLight";
+}
+.km-drawer li.lang-section.active a {
+    border-bottom: solid 3px #00965e;
+}
+.pushMenu {
+    margin-top: 10px;
+}
+h3.titlePush {
+    float: left;
+    margin-top: 10px;
+}
+.switch {
+    float: right;
+    margin: 5px 20px  10px 20px;
+}
+.cmn-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+.cmn-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+input.cmn-toggle-round + label {
+    padding: 2px;
+    width: 55px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 30px;
+}
+input.cmn-toggle-round + label:before,
+input.cmn-toggle-round + label:after {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    bottom: 3px;
+    content: "";
+}
+input.cmn-toggle-round + label:before {
+    right: 3px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+    width: 25px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+    background-color: #00965e;
+}
+input.cmn-toggle-round:checked + label:after {
+    margin-left: 25px;
+}
+.logoFooter {
+    background: url("../img/logo.png") no-repeat #FFFFFF center;
+    background-size: 100%;
+    width: 270px;
+    min-height: 70px;
+    margin-top: 30px;
+    border-top: solid 4px #00965e;
+    display: block;
+}
+
+/*** POPUP LOGIN ***/
+
+.popupLogin {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.popupLogin .popupWrapper {
+    background-color: #00965e;
+    width: 300px;
+    max-width: 90%;
+    padding: 40px 20px 20px 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.popupLogin .popupWrapper .close::before {
+      content: "\e902";
+      font-family: "bnp-icon";
+      color: #FFFFFF;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 10px;
+      font-size: 20px;
+}
+
+.popupLogin .popupWrapper h2 {
+    font-family: "BNPPSansReg";
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.popupLogin .popupWrapper p {
+    font-family: "BNPPSansReg";
+    font-size: 16px;
+    font-style: italic;
+    margin: 40px 0;
+    color: #FFFFFF;
+    line-height: 1.5;
+}
+
+.popupLogin .popupWrapper .button {
+    font-family: "BNPPSansCond";
+    border: solid 1px #FFFFFF;
+    font-style: 14px;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: auto;
+    width: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.popupLogin .popupWrapper .link {
+    font-family: "BNPPSansCond";
+    font-style: 14px;
+    color: #FFFFFF;
+    padding: 20px 30px;
+    display: inline-block;
+    margin: auto;
+    width: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*** LISTE ACTUALITES ***/
+
+#articlesView .km-stretched-view, #searchView .km-stretched-view {
+    height: 100%;
+}
+
+.swiper-categories {
+    width: 100vw;
+    height: 30px;
+    background: #00965e;
+    font-family: "BNPPSansLight";
+    color: #FFFFFF;
+    overflow: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-categories .swiper-wrapper {
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.swiper-categories .swiper-wrapper .swiper-slide {
+    float: left;
+    list-style: none;
+    color: #FFFFFF !important;
+    padding-bottom: 5px;
+    display: inline-block;
+    width: auto;
+    background: none !important;
+}
+
+.swiper-categories .swiper-wrapper .swiper-slide.swiper-slide-active {
+    border-bottom: solid 5px;
+    text-decoration: none;
+    background: none !important;
+}
+
+.list {
+    width: 100vw;
+    float: left;
+    background: #262320;
+}
+
+.list .title {
+    text-align: center;
+    color: #A7A7A7;
+    font-family: "BNPPSansLight";
+    font-size: 14px;
+    margin: 20px 0 15px;
+}
+
+.card {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: top !important;
+    position: relative;
+    height: 170px;
+    border: 0;
+    padding: 0 !important;
+    width: 100%;
+    text-align: left;
+    border-left: solid 5px !important;
+    border-bottom: solid 1px #333333;
+    border-radius: 0 !important;
+    border-color: none;
+    margin: 0;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+
+}
+
+.card .photo {
+    display: block;
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    height: 36px;
+    background-image: url('../img/icon-photo.png');
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    padding-left: 36px;
+    color: #FFFFFF;
+    font-family: 'BNPPSansReg';
+    text-transform: uppercase;
+    font-size: 18px;
+    position: absolute;
+    z-index: 9999;
+}
+
+.card .content {
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);
+    margin: 0 !important;
+}
+
+.card h3 {
+    font-family: "BNPPSansBold";
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+    font-size: 14px !important;
+    margin: 0 0 5px 0 !important;
+}
+
+.card h2 {
+    font-family: "BNPPSansReg";
+    color: #FFFFFF !important;
+    font-size: 20px;
+    line-height: 1.2;
+    font-style: normal !important;
+    margin: 0 !important;
+}
+
+.topStories .card {
+    height: 200px;
+    margin-bottom: 12px;
+}
+
+.recentArticles .card {
+    height: 160px;
+    background-position: top !important;
+}
+
+.pictureInfos {
+    padding: 20px;
+    padding-top: 70px;
+    width: 100vw;
+    max-height: 100vh;
+    overflow: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    background-color: #262320;
+}
+
+.zoomTarget {
+    width: 100%;
+    overflow: hidden;
+}
+
+.zoomTarget img {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zoomTarget:hover {
+    position: absolute;
+    z-index: 9999;
+    height: 300vh;
+    width: calc(100vw - 40px);
+    top: 0;
+    background: #262320;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.zoomTarget:hover img {
+  -moz-transform: scale(3);
+  -webkit-transform: scale(3);
+  transform: scale(3);
+}
+
+.closeZoom:hover ~ .zoomTarget img  {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.closeZoom {
+    color: #FFFFFF !important;
+    position: fixed;
+    z-index: 10000;
+    border: solid 1px #FFF;
+    padding: 10px 15px;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'BNPPSansLight';
+    display: none;
+}
+
+.zoomTarget:hover ~ .closeZoom {
+    display: block;
+}
+
+.pictureInfos img {
+    width: 100%;
+}
+
+.pictureInfos h2 {
+    color: #FFFFFF;
+    font-family: 'BNPPSansReg';
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.pictureInfos p {
+    color: #FFFFFF;
+    font-family: 'BNPPSansLight';
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.pictureInfos .closeButton {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.pictureInfos .closeButton::before {
+    content: "\e902";
+    font-family: "bnp-icon";
+    color: #FFFFFF;
+    font-size: 36px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.tooltipDate {
+    position: absolute;
+    z-index: 9999;
+    top: 10px;
+    right: 10px;
+    background: #FFFFFF;
+    height: 20px;
+    line-height: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    color: #333333;
+    font-family: "BNPPSansLight";
+    font-size: 11px;
+    padding: 7px 10px 5px 10px;
+}
+
+.buttonSeeMore {
+    background: #00965e;
+    color: #FFFFFF !important;
+    padding: 13px 30px 10px 30px;
+    display: block;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-family: "BNPPSansCondBold";
+    font-size: 18px;
+}
+
+/*** CAROUSEL VIDEO ***/
+
+.swiper-videos {
+    float: left;
+    width: 100%;
+    background-color: #000000;
+    padding: 15px 0 50px 0;
+    position: relative;
+}
+
+.swiper-videos h2 {
+    color: #DDDDDD;
+    text-align: center;
+    font-family: 'BNPPSansLight';
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.swiper-videos .swiper-wrapper {
+    width: 100%;
+    float: left;
+}
+
+.swiper-videos .swiper-slide {
+    width: 85%;
+    height: 150px !important;
+    position: relative;
+    background-size: cover;
+}
+
+.swiper-videos .swiper-slide .content {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+
+.swiper-videos .swiper-slide .play {
+    display: block;
+    margin: 15px;
+    width: 36px;
+    height: 36px;
+    background-image: url('../img/icon-play.png');
+    background-size: cover;
+}
+
+.swiper-videos .swiper-slide h2 {
+    width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    font-family: "BNPPSansReg";
+    color: #FFFFFF !important;
+    font-size: 20px;
+    line-height: 1.2;
+    font-style: normal !important;
+    margin: 0 !important;
+    text-align: left;
+}
+
+.swiper-videos .swiper-slide h3 {
+    font-family: "BNPPSansBold";
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+    font-size: 14px !important;
+    margin: 0 0 5px 0 !important;
+}
+
+.swiper-videos .swiper-slide .iframe {
+    visibility: hidden;
+}
+
+.swiper-videos .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    padding: 15px 0 20px 0;
+}
+
+.swiper-videos .swiper-pagination 
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #FFFFFF;
+}
+
+.swiper-videos .swiper-pagination 
+span.swiper-pagination-bullet {
+    background-color: #DDDDDD; 
+}
+
+/*** DETAIL ARTICLE ***/
+
+.detailArticleWrapper {
+    width: 100%;
+    background: #FFFFFF;
+    float: left;
+    padding-bottom: 81px;
+}
+
+.detailArticleWrapper h3.category {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    padding: 8px 7px 5px 7px;
+    margin: 20px 20px 0 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "BNPPSansReg";
+}
+
+.detailArticleWrapper h1 {
+    margin: 20px 20px 10px 20px;
+    font-family: "BNPPSansReg";
+    font-size: 36px;
+    color: #5f5f5f;
+}
+
+.detailArticleWrapper .metas {
+    margin: 10px 20px 10px 20px;
+    font-family: "BNPPSansReg";
+    font-size: 14px;
+    color: #8D8D8D;
+}
+
+.detailArticleWrapper .metas span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.detailArticleWrapper .metas span.author::before {
+    font-family: "bnp-icon";
+    content: "\e971";
+    margin-right: 5px;
+}
+
+.detailArticleWrapper .metas span.date::before {
+    font-family: "bnp-icon";
+    content: "\e917";
+    margin: 2px 5px 0 0;
+}
+
+.detailArticleWrapper .content {
+    margin: 0 20px;
+    float: left;
+    font-size: 18px;
+    font-family: "BNPPSansLight";
+    line-height: 1.5;
+}
+
+.detailArticleWrapper .content h2,
+.detailArticleWrapper .content h2 p {
+    font-family: "BNPPSansReg";
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #5f5f5f;
+    margin: 20px 0;
+}
+
+.detailArticleWrapper .content img {
+    margin: 0 0 20px -20px;
+    width: calc(100% + 40px);
+}
+
+.detailArticleWrapper .content p {
+    font-size: 18px;
+    font-family: "BNPPSansLight";
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+}
+
+.detailArticleWrapper .content a {
+    color: #5f5f5f;
+    text-decoration: underline;
+}
+
+.detailArticleWrapper .content iframe {
+    width: 100%;
+    min-height: 180px;
+}
+
+.detailArticleWrapper .content strong {
+    font-family: "BNPPSansReg";
+}
+
+.detailArticleWrapper .content ul {
+    padding: 0;
+    margin: 0 20px;
+}
+
+.detailArticleWrapper .content ul li {
+    font-size: 18px;
+    font-family: "BNPPSansLight";
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+}
+
+.detailArticleWrapper .content blockquote {
+    background-color: #6ab500;
+    margin: -50px 0 30px 0;
+    color: #FFFFFF;
+    position: relative;
+    padding: 30px 40px;
+    font-family: "BNPPSansReg";
+    font-size: 24px;
+}
+
+.detailArticleWrapper .content blockquote::before {
+    content: "\e91b";
+    display: block;
+    color: #FFFFFF;
+    font-family: "bnp-icon";
+    margin: -40px 0 20px 0;
+}
+
+.detailArticleWrapper .content blockquote p, 
+.detailArticleWrapper .content blockquote i {
+    display: block;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+.detailArticleWrapper .content h3 {
+    font-size: 24px;
+    color: #5f5f5f;
+    font-family: "BNPPSansReg";
+    clear: left;
+    margin-top: 20px;
+}
+
+.detailArticleWrapper .moreInfo {
+    padding: 20px;
+    width: 100%;
+    float: left;
+}
+
+.detailArticleWrapper .moreInfo h3 {
+    font-family: BNPPSansCond, BNPPSansReg, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.detailArticleWrapper .moreInfo p {
+    font-size: 18px;
+    font-family: "BNPPSansLight";
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+}
+
+.detailArticleWrapper .moreInfo p a {
+    color: #00965e;
+}
+
+.detailArticleWrapper .contact {
+    padding: 20px;
+    width: 100%;
+    float: left;
+}
+
+.detailArticleWrapper .contact .button {
+    background-color: #00965e;
+    border-color: #00965e;
+    color: #fff;
+    font-family: "BNPPSansCond";
+    display: inline-block;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 10px 44px 6px;
+    text-decoration: none;
+}
+
+.detailArticleWrapper .tags {
+    margin: 20px;
+    border-top: solid 1px #CCCCCC;
+    padding: 30px 0 10px 0;
+    float: left;
+    width: calc(100vw - 40px);
+}
+
+.detailArticleWrapper .tags h3 {
+    font-family: "BNPPSansReg";
+    text-transform: uppercase;
+    float: left;
+    font-size: 20px;
+    margin: 10px 10px 0 5px;
+}
+
+.detailArticleWrapper .tags a {
+    background: #FAFAFA;
+    border: solid 1px #C6C6C6;
+    color: #5f5f5f;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px 5px 3px 5px;
+    border-radius: 3px;
+    font-family: "BNPPSansCondBold";
+    font-size: 16px;
+    display: inline-block;
+    margin: 5px;
+    float: left;
+}
+
+.detailArticleWrapper .poll {
+    width: calc(100vw - 40px);
+    padding: 30px 0 0 0;
+    margin: 0 20px 20px 20px;
+    float: left;
+    border-top: solid 1px #CCCCCC;
+}
+
+.detailArticleWrapper .poll h3 {
+    color: #93bd0e;
+    font-family: "BNPPSansReg";
+    font-size: 20px;
+    margin: 0 0 30px 0;
+    width: 100%;
+}
+
+.detailArticleWrapper .poll .answer, 
+.detailArticleWrapper .poll .question {
+    font-family: "BNPPSansLight";
+    color: #252525;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.detailArticleWrapper .poll .question input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.detailArticleWrapper .poll .question label {
+    display: inline-block;
+    position: relative;
+}
+
+.detailArticleWrapper .poll .question label::before {
+    border: solid 1px #93bd0e;
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: inline-block;
+    margin: 0 10px -5px 0;
+}
+
+.detailArticleWrapper .poll .question input:checked + label::after {
+    color: #93bd0e;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 18px;
+    left: 4px;
+    top: 3px;
+    font-size: 11px;
+    content: "\e909";
+    font-family: "bnp-icon";
+}
+
+.detailArticleWrapper .poll .answer .number {
+    float: right;
+    font-size: 12px;
+    color: #242424;
+}
+
+.detailArticleWrapper .poll .answer .progressbar {
+    width: 100%;
+    height: 5px;
+    margin: 5px 0;
+    background-color: #ededed;
+}
+
+.detailArticleWrapper .poll .answer .progressbar span {
+    height: 5px;
+    background-color: #a5c73b;
+    display: block;
+}
+
+.detailArticleWrapper .comments {
+    float: left;
+    margin: 20px;
+}
+.detailArticleWrapper .comments h3 {
+    font-family: "BNPPSansReg";
+    text-transform: uppercase;
+    float: left;
+    font-size: 20px;
+    margin: 0;
+    width: 100%;
+    border-bottom: solid 1px #CCCCCC;
+    padding-bottom: 5px;
+}
+
+.detailArticleWrapper .comments .listComments {
+    float: left;
+    margin: 20px 0;
+}
+
+.detailArticleWrapper .comments .listComments .comment {
+    background-color: #EEEEEE;
+    float: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: "BNPPSansReg";
+    width: 100%;
+}
+
+.detailArticleWrapper .comments .listComments .comment.highlighted {
+    background: rgba(0, 150, 94, 0.10);
+}
+
+.detailArticleWrapper .comments .listComments .comment .user,
+.detailArticleWrapper .comments .listComments .subComment .user {
+    font-size: 16px;
+}
+
+.detailArticleWrapper .comments .listComments .comment .date,
+.detailArticleWrapper .comments .listComments .subComment .date {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.detailArticleWrapper .comments .listComments .comment p,
+.detailArticleWrapper .comments .listComments .subComment p {
+    margin: 5px 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+.detailArticleWrapper .comments .listComments .comment .answerLink {
+    color: #00965e;
+    text-decoration: none;
+    display: block;
+    clear: left;
+}
+
+.detailArticleWrapper .comments .listComments .subComment {
+    border-left: solid 5px #EEEEEE;
+    float: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-family: "BNPPSansReg";
+}
+
+.detailArticleWrapper .comments .formComments { 
+    margin: 20px 0;
+}
+
+.detailArticleWrapper .comments .formComments .formItem {
+    margin: 15px 0;
+    width: 100%;
+    float: left;
+}
+
+.detailArticleWrapper .comments .formComments .formItem label {
+    font-family: "BNPPSansLight";
+    font-size: 14px;
+}
+
+.detailArticleWrapper .comments .formComments .formItem label span {
+    float: right;
+}
+
+.detailArticleWrapper .comments .formComments .formItem input,
+.detailArticleWrapper .comments .formComments .formItem textarea {
+    border: solid 1px #DDDDDD;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    font-family: "BNPPSansLight";
+}
+
+.detailArticleWrapper .comments .formComments button {
+    background-color: #00965e;
+    border-color: #00965e;
+    color: #fff;
+    font-family: "BNPPSansCond";
+    display: block;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 10px 44px 6px;
+    text-decoration: none;
+    margin: auto;
+}
+
+.detailArticleWrapper .comments .confirmPopup,
+.detailArticleWrapper .comments .errorPopup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 50;
+    background-color: #00965e;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    width: 80%;
+}
+
+.detailArticleWrapper .comments .confirmPopup p,
+.detailArticleWrapper .comments .errorPopup p {
+    color: #FFFFFF;
+    font-family: "BNPPSansCond";
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.detailArticleWrapper .replyForm {
+    margin-top: 20px;
+    float: left;
+}
+
+.detailArticleWrapper .comment .answerCommentsForm {
+    display: block;
+    margin-top: 25px;
+    float: left;
+}
+
+.detailArticleWrapper .comment .answerCommentsForm h3 {
+    font-size: 14px;
+}
+
+.detailArticleWrapper .similarArticles {
+    background-color: #262320;
+    float: left;
+    width: 100%;
+}
+
+.detailArticleWrapper .similarArticles h3 {
+    font-family: "BNPPSansReg";
+    font-size: 17px;
+    color: #A7A7A7;
+    text-transform: uppercase;
+    margin: 20px 20px 17px 20px;
+}
+
+.detailArticleWrapper .gallery {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.detailArticleWrapper .gallery .swiper-wrapper {
+    height: auto;
+}
+
+.detailArticleWrapper .gallery .swiper-slide {
+    height: auto;
+    width: 100% !important;
+    text-align: center;
+}
+
+.detailArticleWrapper .gallery .swiper-slide img {
+    width: auto;
+    max-width: 100%;
+    max-height: 250px;
+}
+
+.detailArticleWrapper .gallery .swiper-pagination.swiper-pagination-bullets {
+    margin-top: 20px;
+    float: left;
+    position: relative;
+}
+
+.detailArticleWrapper .gallery .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #00965e;
+}
+
+.km-footer.social {
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 25px 20px 20px 20px;
+}
+
+.km-footer.social .likeButton {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.km-footer.social .likeButton::before {
+    content: "\e91a";
+    font-family: "bnp-icon";
+    color: #ff0000;
+    font-size: 20px;
+}
+
+.km-footer.social .likeButton span {
+    background-color: #DFDDDC;
+    color: #333333;
+    padding: 5px 5px 3px 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-family: "BNPPSansReg";
+    position: relative;
+    top: -3px;
+    left: 10px;
+}
+
+.km-footer.social .likeButton.active::before {
+    content: "\e91d";
+    font-family: "bnp-icon";
+    color: #ff0000;
+    font-size: 20px;
+}
+
+.km-footer.social .likeButton.active span {
+    background-color: #DFDDDC;
+    color: #333333;
+    padding: 5px 5px 3px 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-family: "BNPPSansReg";
+    position: relative;
+    top: -3px;
+    left: 10px;
+}
+
+.km-footer.social .likeButton span::before {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #DFDDDC;
+  content: "";
+  display: block;
+  position: absolute;
+  left: -5px;
+}
+
+.km-footer.social .socialButtons {
+    float: right;
+}
+
+.km-footer.social .socialButtons a {
+    border: none;
+    padding: 0;
+}
+
+.km-footer.social .socialButtons a span {
+    border: solid 1px #0077b5;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 10px 10px 8px 10px;
+    width: auto;
+    height: 35px;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    font-family: "BNPPSansLight";
+    text-transform: uppercase;
+    color: #0077b5;
+}
+
+.km-footer.social .socialButtons a.km-state-active span {
+    border: solid 1px #0077b5;
+    background: #0077b5;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 10px 10px 8px 10px;
+    width: auto;
+    height: 35px;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    font-family: "BNPPSansLight";
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/*** DETAIL ABOUT ***/
+
+.detailaboutWrapper {
+    width: 100%;
+    background: #FFFFFF;
+    float: left;
+    min-height: calc(100vh - 60px);
+}
+
+.detailaboutWrapper .aboutInfos {
+    padding: 20px;
+}
+
+.detailaboutWrapper .aboutInfos h2 {
+    font-family: "BNPPSansReg";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #333333;
+    border-bottom: solid 1px #828282;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.detailaboutWrapper .aboutInfos p {
+    font-family: "BNPPSansLight";
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/*** AGENDA ***/
+
+.agendaWrapper {
+    background: #FFFFFF;
+    top: 0;
+    position: absolute;
+    height: calc(100vh - 50px);
+    padding-bottom: 120px;
+}
+
+.swiper-months {
+    width: 100vw;
+    height: 51px;
+    padding-top: 10px;
+    border-bottom: solid 1px #00965e;
+}
+
+.swiper-months .swiper-slide {
+    color: #00965e !important;
+    font-family: "BNPPSansReg";
+    font-size: 14px;
+    height: 40px;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.swiper-months .swiper-slide::first-letter { 
+    text-transform: uppercase;
+}
+
+.swiper-months .swiper-slide.swiper-slide-active {
+    border-bottom: solid 3px #00965e;
+}
+
+.swiper-years {
+    width: 100vw;
+    border-bottom: solid 1px #00965e;
+}
+
+.swiper-years .swiper-slide {
+    color: #00965e !important;
+    font-family: "BNPPSansReg";
+    font-size: 14px;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.swiper-years .swiper-slide.swiper-slide-active {
+    border-bottom: solid 3px #00965e;
+}
+
+.listEvents {
+    margin: 40px 20px 0 20px;
+}
+
+.listEvents .eventItem, .listEvents .km-state-active {
+    padding: 0;
+    border: none;
+    text-align: left;
+    background: #FFFFFF !important;
+    width: auto;
+}
+
+.listEvents .eventHeader {
+    height: 165px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+}
+
+.listEvents .eventDate {
+    background: #00965e;
+    max-width: 130px;
+    margin-left: -20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "BNPPSansLight";
+    color: #FFFFFF;
+    padding: 13px 5px 10px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.listEvents .eventDate span {
+    display: block;
+    font-family: "BNPPSansReg";
+    font-size: 16px;
+    margin: 3px 0;
+}
+
+.listEvents .eventDate .from {
+    width: 60px;
+    float: left;
+}
+
+.listEvents .eventDate .to {
+    width: 60px;
+    float: right;
+    position: relative;
+    border-left: solid 1px #FFFFFF;
+}
+
+.listEvents .eventDate .to::before {
+    font-family: "bnp-icon";
+    content: "\e900";
+    color: #FFFFFF;
+    position: absolute;
+    left: -4px;
+    top: 15px;
+    transform: rotate(180deg);
+    background: #00965e;
+    padding: 4px 0;
+}
+
+.listEvents .eventContent {
+    margin: 20px 0;
+    border-bottom: solid 1px #EDEDED;
+}
+
+.listEvents .eventItem:last-child .eventContent {
+    border: none;
+    margin-bottom: 0;
+}
+
+.listEvents .eventContent .location {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: "BNPPSansLight";
+    color: #5f5f5f;
+    float: left;
+}
+
+.listEvents .eventContent .location::before {
+    font-family: "bnp-icon";
+    content: "\e921";
+    color: #5f5f5f;
+    margin-right: 5px;
+}
+
+.listEvents .eventContent .addToCal {
+    float: right;
+    padding: 10px;
+    border: none;
+    margin-top: -30px;
+}
+
+.listEvents .eventContent .addToCal::before {
+    content: "\e920";
+    font-family: "bnp-icon";
+    color: #5f5f5f;
+}
+
+.listEvents .eventContent .addToCal.km-state-active {
+    margin: -30px 3px 3px 3px;
+}
+
+.listEvents .eventContent h2 {
+    font-family: "BNPPSansReg";
+    line-height: 1.2;
+    color: #5f5f5f;
+    font-size: 18px;
+}
+
+.listEvents .eventContent p {
+    margin: 5px 0 15px 0;
+    font-family: "BNPPSansLight";
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/*** DETAIL EVENT ***/
+
+.detailEventWrapper {
+    width: 100%;
+    background: #FFFFFF;
+    float: left;
+    min-height: calc(100vh - 60px);
+}
+
+.detailEventWrapper .eventInfos {
+    padding: 20px;
+    background: #e9e9e9;
+}
+
+.detailEventWrapper .eventInfos h2 {
+    font-family: "BNPPSansReg";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #333333;
+    border-bottom: solid 1px #828282;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.detailEventWrapper .eventInfos span {
+    margin: 10px 0;
+    display: inline-block;
+    font-family: "BNPPSansReg";
+    font-size: 16px;
+    color: #5f5f5f !important;
+}
+
+.detailEventWrapper .eventInfos span.date::before {
+    content: "\e924";
+    font-family: "bnp-icon";
+    margin-right: 10px;
+    color: #a3a3a3;
+}
+
+.detailEventWrapper .eventInfos span.hour::before {
+    content: "\e917";
+    font-family: "bnp-icon";
+    margin-right: 10px;
+    color: #a3a3a3;
+}
+
+.detailEventWrapper .eventInfos span.place::before {
+    content: "\e921";
+    font-family: "bnp-icon";
+    margin-right: 10px;
+    color: #a3a3a3;
+}
+
+.detailEventWrapper .eventInfos .addToCal {
+    background: none;
+    padding: 11px 30px 8px 30px;
+    display: block;
+    width: 210px;;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    margin: 20px auto 10px;
+    border: solid 1px #00965e;
+    padding: 0;
+}
+
+.detailEventWrapper .eventInfos .addToCal span {
+    text-transform: uppercase;
+    font-family: "BNPPSansCondBold";
+    font-size: 15px;
+    color: #00965e !important;
+    margin: 0;
+    width: 100%;
+    height: 38px;
+    display: block;
+    line-height: 41px;
+}
+
+.detailEventWrapper h1 {
+    margin: 40px 20px 0 20px;
+    font-family: "BNPPSansReg";
+    font-size: 36px;
+    color: #5f5f5f;
+}
+
+.detailEventWrapper .content {
+    margin: 20px;
+    float: left;
+    font-family: "BNPPSansLight";
+}
+
+.detailEventWrapper .content h2 {
+    font-family: "BNPPSansReg";
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #5f5f5f;
+    margin: 0 0 20px 0;
+}
+
+.detailEventWrapper .content img {
+    margin: 0 0 20px -20px;
+    width: calc(100% + 40px);
+}
+
+.detailEventWrapper .content p {
+    font-size: 18px;
+    font-family: "BNPPSansLight";
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+}
+
+.detailEventWrapper .content p a {
+    color: #5f5f5f;
+    text-decoration: underline;
+}
+
+.detailEventWrapper .content h3 {
+    font-size: 24px;
+    color: #5f5f5f;
+    font-family: "BNPPSansReg";
+    clear: left;
+    margin-top: 20px;
+}
+
+.detailEventWrapper .content div div {
+    display: none;
+}
+
+/*** PRIVATE MODE ***/
+
+.privateButton {
+    font-family: "BNPPSansCond" !important;
+    text-transform: uppercase;
+    color: #00965e !important;
+    border: solid 1px #00965e !important;
+    border-radius: 3px !important;
+    padding: 5px 22px 2px 22px !important;
+    display: block !important;
+    float: left;
+    width: 120px;
+    margin: 20px 0 0 -15px !important;
+    line-height: 25px !important;
+    background: none !important;
+    text-align: center;
+}
+
+.privateScreen {
+    background: #00965e;
+    float: left;
+    width: 100%;
+    height: calc(100vh - 55px);
+    position: relative;
+}
+
+.privateScreen h1 {
+    font-family: "BNPPSansCond";
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 70px 0 30px 0;
+}
+
+.privateScreen h1 span.small {
+    font-size: 18px;
+}
+
+.privateScreen form {
+    width: 80%;
+    margin: auto;
+}
+
+.privateScreen .labelerror {
+    font-family: "BNPPSansLight";
+    color: #d3002f;
+    text-align: right;
+    width: 100%;
+    display: block;
+    font-size: 13px;
+}
+
+.privateScreen form input {
+    width: 100%;
+    height: 40px;
+    padding: 15px 30px 15px 20px;
+    display: block;
+    border: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    font-family: "BNPPSansReg";
+    text-transform: lowercase;
+}
+
+.privateScreen .formInput {
+    position: relative;
+}
+
+.privateScreen .formInput.error::after {
+    font-family: "bnp-icon";
+    content: "\e902";
+    position: absolute;
+    z-index: 2;
+    color: #d3002f;
+    font-size: 20px;
+    top: 8px;
+    right: 10px;
+}
+
+.privateScreen form button {
+    font-family: "BNPPSansCond";
+    text-transform: uppercase;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    color: #00965e;
+    display: block;
+    font-size: 18px;
+    width: 150px;
+    padding: 12px 0 9px 0;
+    margin: 30px auto 0;
+}
+
+.privateScreen .cancelButton, .privateScreen .passwordButton {
+    font-family: "BNPPSansCond";
+    text-transform: uppercase;
+    background: #00965e;
+    border: solid 1px #FFFFFF;
+    border-radius: 3px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 18px;
+    width: 150px;
+    padding: 12px 0 9px 0;
+    margin: 15px auto 0;
+}
+
+.privateScreen .passwordButton {
+    margin-top: 40px;
+}
+
+.privateScreen .notsendpassword {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-family: "BNPPSansCond";
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+.privateScreen .icon-success {
+    width: 99px;
+    margin: 50px auto;
+}
+
+/*select#mails {
+    background: none;
+    border: none;
+    border-bottom: solid 1px #FFFFFF;
+    border-radius: 0 !important;
+    color: #FFFFFF;
+    font-family: "BNPPSansReg";
+    font-size: 16px;
+    height: 40px;
+}*/
+
+.formSelect ul {
+    position: relative;
+    background: #EEEEEE;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 150px;
+    overflow: scroll;
+    padding: 0;
+    margin: 0;
+}
+
+.formSelect ul li {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: solid 1px #DADADA;
+    margin: 0 10px;
+}
+
+.formSelect ul li input {
+    position: absolute;
+    left: -200%;
+}
+
+.formSelect ul li label {
+    font-family: "BNPPSansReg";
+    color: #00965e;
+    font-size: 16px;
+}
+
+.formSelect ul li label.active {
+    font-family: "BNPPSansReg";
+    color: #006e45;
+    font-size: 20px;
+    transition: all ease .2s;
+}
+
+/*.formSelect::after {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid #ffffff;
+    position: absolute;
+    right: 6px;
+    top: 17px;
+}*/
+
+/*** IPAD ***/
+
+@media screen and (min-width: 767px) {
+    ul.menu-categories {
+        padding-top: 30px;
+    }
+    .menu-lang-title {
+        width: 100%;
+    }
+    ul.menuLanguage {
+        width: calc(100% - 40px);
+    }
+    .pushMenu {
+        position: absolute;
+        width: 100%;
+        bottom: 80px;
+    }
+    .logoFooter {
+        position: absolute;
+        bottom: 0;
+    }
+    .topStories .card {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .recentArticles .card {
+        height: 230px;
+    }
+    .detailArticleWrapper h3.category {
+        margin: 20px 20px 0 100px;
+    }
+    .detailArticleWrapper h1 {
+        margin: 20px 100px 10px 100px;
+    }
+    .detailArticleWrapper .metas {
+        margin: 10px 100px 10px 100px;
+    }
+    .detailArticleWrapper .content {
+        margin: 0 100px;
+    }
+    .detailArticleWrapper .content img {
+        margin: 0 0 20px -60px;
+        width: calc(100% + 120px);
+    }
+    .detailArticleWrapper .content blockquote {
+        margin: -50px 30px 30px -30px;
+        float: left;
+        width: 300px;
+        display: inline-block;
+    }
+    .detailArticleWrapper .content iframe {
+        width: 100%;
+        min-height: 320px;
+    }
+    .detailArticleWrapper .tags {
+        margin: 20px 100px;
+        width: calc(100vw - 200px);
+    }
+    .detailArticleWrapper .poll {
+        width: calc(100vw - 200px);
+        margin: 0 100px 20px 100px;
+    }
+    .detailArticleWrapper .gallery .swiper-slide {
+        height: auto;
+        width: auto !important;
+    }
+    .detailArticleWrapper .gallery .swiper-slide img {
+        width: auto;
+    }
+    .km-footer.social {
+        padding: 25px 50px 20px 50px;
+    }
+    .card {
+        height: 230px;
+    }
+    .swiper-years {
+        height: 41px;
+    }
+    .swiper-years .swiper-slide {
+        height: 40px;
+    }
+    .agendaWrapper .km-native-scroller {
+        height: 100vh;
+    }
+    .listEvents .eventItem, .listEvents .km-state-active {
+        width: auto;
+        margin: 20px 60px 0 60px;
+        padding: 20px 0;
+        border-bottom: solid 1px #EDEDED;
+    }
+    .listEvents .eventItem:last-child {
+        border-bottom: none;
+    }
+    .listEvents .eventHeader {
+        width: 250px;
+        float: left;
+        margin-right: 20px;
+    }
+    .listEvents .eventItem .eventContent {
+        width: calc(100% - 270px);
+        float: left;
+        border: none;
+        margin: 0;
+    }
+    .listEvents .eventContent h2 {
+        width: 100%;
+        clear: left;
+        float: left;
+        margin: 15px 0;
+    }
+    .listEvents .eventContent p {
+        clear: left;
+    }
+    .listEvents .clearAll {
+        clear: none;
+    }
+    .detailEventWrapper .eventInfos {
+        padding: 40px 40px 20px 40px;
+    }
+    .detailEventWrapper h1 {
+        margin: 40px 60px 0 60px;
+    }
+    .detailEventWrapper .content {
+        margin: 20px 60px;
+        line-height: 1.5;
+    }
+}

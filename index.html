@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
+<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
+
+<link href="styles/overrides.css" rel="stylesheet">
+<link href="styles/main.css" rel="stylesheet">
+<link href="styles/vendor/swiper.min.css" rel="stylesheet">
+<!-- <link href="styles/vendor/magnific-popup.css" rel="stylesheet"> -->
+<link href="styles/dixit.css" rel="stylesheet">
+<link href="styles/icon-bnp.css" rel="stylesheet">
+<link href="styles/animate.css" rel="stylesheet">
+
+<style>
+    .job-section {
+        border-color: #6ab500 !important;
+        background-color: #6ab500 !important;
+    }
+
+    .collegue-section {
+        border-color: #b90076 !important;
+        background-color: #b90076 !important;
+    }
+
+    .client-section {
+        border-color: #c3b100 !important;
+        background-color: #c3b100 !important;
+    }
+
+    .vision-section {
+        border-color: #ffa800 !important;
+        background-color: #ffa800 !important;
+    }
+
+    .role-section {
+        border-color: #00c5a2 !important;
+        background-color: #00c5a2 !important;
+    }
+
+    .offre-section {
+        border-color: #0087a9 !important;
+        background-color: #0087a9 !important;
+    }
+
+    .monde-section {
+        border-color: #d3002f !important;
+        background-color: #d3002f !important;
+    }
+
+    .mon-job {
+        border-color: #6ab500 !important;
+    }
+
+    .mes-collegues {
+        border-color: #b90076 !important;
+    }
+
+    .nos-clients {
+        border-color: #c3b100 !important;
+    }
+
+    .notre-vision {
+        border-color: #ffa800 !important;
+    }
+
+    .notre-role {
+        border-color: #00c5a2 !important;
+    }
+
+    .notre-offre {
+        border-color: #0087a9 !important;
+    }
+
+    .notre-monde {
+        border-color: #d3002f !important;
+    }
+</style>
+</head>
+
+<!-- class="iOSlikeOS" OR class="ANDROIDlikeOS">-->
+
+<body id="kendoUiMobileApp" class="iOSlikeOS">
+    <div data-role="layout" data-id="layout-search" style="display: none">
+        <header data-role="header">
+            <div data-role="navbar">
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+                <span data-role="view-title"></span>
+                <a data-role="button" data-align="right" data-icon="search" class="searchButton"></a>
+            </div>
+            <form data-role="searchbar" class="searchBar">
+                <input type="text" name="search" data-bind="attr: { placeholder: texts.search }" />
+                <input type="submit" value="" />
+                <span class="km-icon km-search km-notext"></span>
+            </form>
+        </header>
+    </div>
+
+    <div data-role="layout" data-id="layout-search-detail" style="display: none">
+        <header data-role="header">
+            <div data-role="navbar">
+                <a data-role="backbutton" data-align="left" data-icon="details-button"></a>
+                <span data-role="view-title"></span>
+                <a data-role="button" data-align="right" data-icon="search" class="searchButton"></a>
+            </div>
+            <form data-role="searchbar" class="searchBar">
+                <input type="text" name="search" data-bind="attr: { placeholder: texts.search }" />
+                <input type="submit" value="" />
+                <span class="km-icon km-search km-notext"></span>
+            </form>
+        </header>
+    </div>
+
+    <div data-role="layout" data-id="layout" style="display: none">
+        <header data-role="header">
+            <div data-role="navbar">
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+    </div>
+
+    <div data-role="layout" data-id="layout-detail" style="display: none">
+        <header data-role="header">
+            <div data-role="navbar">
+                <a data-role="backbutton" data-align="left" data-icon="details-button"></a>
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+    </div>
+
+    <div data-role="layout" data-id="layout-private-mode" style="display: none">
+        <header data-role="header">
+            <div data-role="navbar">
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+                <span data-role="view-title"></span>
+                <a data-role="button" data-align="right" data-icon="search" class="searchButton"></a>
+            </div>
+            <form data-role="searchbar" class="searchBar">
+                <input type="text" name="search" data-bind="attr: { placeholder: texts.search }" />
+                <input type="submit" value="" />
+                <span class="km-icon km-search km-notext"></span>
+            </form>
+        </header>
+    </div>
+
+    <div data-role="drawer" id="appDrawer" style="width: 270px; display: none;" data-swipe-to-open="false" data-init="app.drawer.onInit"
+        data-show="app.drawer.onShow" data-model="app.drawer">
+
+        <ul data-role="listview" class="menu-listview menu-categories" style="padding-top: 10px;">
+
+            <li>
+                <a href="components/privateLogin/view.html" class="privateButton" data-bind="text: translations.texts.login">S'identifier</a>
+            </li>
+
+            <li class="actualite-section">
+                <a href="components/articles/view.html" data-bind="text: translations.texts.news">Actualités</a>
+            </li>
+            <li class="actualite-section">
+                <a href="components/events/view.html" data-bind="text: translations.texts.agenda">Agenda</a>
+            </li>
+            <li class="actualite-section">
+                <a data-bind="text: translations.texts.parking_counter, attr: { data-iab-href: translations.texts.parking_counter_url }">Parking Counter</a>
+            </li>
+            <li class="actualite-section">
+                <a data-bind="text: translations.texts.luck, attr: { data-iab-href: translations.texts.luck_url }">Tentez votre chance</a>
+            </li>
+        </ul>
+
+        <h3 data-bind="text: translations.texts.work_title">L'actu de votre métier</h3>
+        <ul data-role="listview" class="menu-listview" data-source="app.drawer.professions" data-template="drawerProfessionsTemplate"></ul>
+
+        <script type="text/x-kendo-template" id="drawerProfessionsTemplate">
+            <a href="components/articles/view.html?mode=profession&idx=#: Index #">#: Title #</a>
+        </script>
+
+        <ul data-role="listview" class="menu-listview menu-categories" style="padding-top: 10px;">
+            <li class="actualite-section">
+                <a href="components/about/view.html" data-bind="text: translations.texts.aboutUs">Qui sommes-nous ?</a>
+            </li>
+            <li class="actualite-section">
+                <a data-rel="external" target="_blank" data-role="touch" href="mailto:dixit@bnpparibasfortis.be" data-bind="text: translations.texts.contactUs">Contact et suggestions</a>
+            </li>
+        </ul>
+
+        <h3 data-bind="text: translations.texts.language" class="menu-lang-title">Langue</h3>
+        <ul data-role="listview" class="menuLanguage">
+            <li class="lang-section" data-bind="css: { active: translations.isNl }">
+                <a data-bind="click: selectLanguage" data-lg="nl">Nederlands</a>
+            </li>
+            <li class="lang-section" data-bind="css: { active: translations.isFr }">
+                <a data-bind="click: selectLanguage" data-lg="fr">Français</a>
+            </li>
+        </ul>
+        <div class="logoFooter"></div>
+        <!--<div class="pushMenu">
+            <h3 data-bind="text: translations.texts.push" class="titlePush">Notifications</h3>
+            <div class="switch">
+                <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox" data-bind="checked: push.isActive, events: { change: onPushChange }">
+                <label for="cmn-toggle-1"></label>
+            </div>-->
+    </div>
+
+    <div data-role="footer">
+        
+    </div>
+
+    </div>
+    <div class="popupLogin" style="display: none;" id="notificationPopup">
+        <div class="popupWrapper">
+            <a id="closeNotificationPopup" class="close"></a>
+            <h2 data-bind="text: translations.texts.notification">Notification</h2>
+            <p data-bind="text: translations.texts.identification">Identifiez-vous en tant que collaborateur de BNP Paribas en Belgique pour accéder à tous les articles de Dixit Today</p>
+            <a id="loginNotificationPopup" class="button" data-role="button" data-bind="text: translations.texts.loginButton">Identifiez-vous</a>
+            <a id="disableNotificationPopup" class="link" data-bind="text: translations.texts.notRemind">Ne plus me demander</a>
+        </div>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+
+    <script src="scripts/vendor/murmurhash3_gc.js"></script>
+    <script src="scripts/vendor/jquery.viewportchecker.min.js"></script>
+    <script src="scripts/vendor/lscache.min.js"></script>
+    <script src="scripts/vendor/KendoRepeater.js"></script>
+    <script src="scripts/vendor/swiper.jquery.min.js"></script>
+    <script src="scripts/vendor/jquery.waitforimages.min.js"></script>
+    <script src="scripts/vendor/moment-with-locales.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="scripts/webanalytics.js"></script>
+    <script src="scripts/push.js"></script>
+    <script src="scripts/texts_fr.js"></script>
+    <script src="scripts/texts_nl.js"></script>
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/cache.js"></script>
+    <script src="scripts/translations.js"></script>
+    <script src="scripts/webservices.js"></script>
+    <script src="scripts/dataTransformer.js"></script>
+    <script src="scripts/customBinders.js"></script>
+    <script src="scripts/globalEvents.js"></script>
+    <script src="scripts/Searchbar.js"></script>
+    <!-- <script src="scripts/popup.js"></script> -->
+
+    <script src="components/drawer.js"></script>
+    <script src="components/about/index.js"></script>
+    <script src="components/articles/index.js"></script>
+    <script src="components/article/index.js"></script>
+    <script src="components/events/index.js"></script>
+    <script src="components/event/index.js"></script>
+    <script src="components/search/index.js"></script>
+    <script src="components/privateLogin/index.js"></script>
+    <script src="components/privatePassword/index.js"></script>
+    <script src="components/privateSuccess/index.js"></script>
+
+</body>
+
+</html>
